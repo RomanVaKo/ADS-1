@@ -12,14 +12,12 @@ int cbinsearch(int* arr, int size, int value) {
         else
             r = mid;
     }
-    
     if (arr[l] == value) {
         while (arr[l] == value) {
             count++;
             l++;
         }
     }
-
     if (count > 0)
         return count;
     else
