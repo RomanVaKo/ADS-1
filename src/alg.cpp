@@ -1,3 +1,5 @@
+// Copyright 2021 NNTU-CS
+
 int cbinsearch(int* arr, int size, int value) {
     int count = 0;
     int l = 0, r = size - 1;
@@ -11,8 +13,8 @@ int cbinsearch(int* arr, int size, int value) {
             l = mid + 1;
         else break;
     }
-
-    if (arr[l] == value) {
+    
+    if (arr[mid] == value) {
         while (arr[l] == value) {
             count++;
             l++;
